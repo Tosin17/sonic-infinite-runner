@@ -3,38 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoAH Birthday</title>
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            color: #333333;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-        }
-
-        p {
-            color: #666666;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
-        }
-
-        img {
-            display: block;
-            margin: 50px auto;
-            width: 100px;
-            height: 100px;
-        }
-    </style>
-   
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Favorite Games</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my website!</p>
-    <img src="tnt-1.png" alt="TNT Image">
+    <h1>Favorite Games</h1>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="images/game1.jpg" alt="Gaming Setup">
+                <p class="caption">Epic Gaming Setup</p>
+            </div>
+            <div class="slide">
+                <img src="images/game2.jpg" alt="Gaming Controller">
+                <p class="caption">Controller Ready</p>
+            </div>
+            <div class="slide">
+                <img src="images/game3.jpg" alt="Game Night">
+                <p class="caption">Game Night</p>
+            </div>
+            <div class="slide">
+                <img src="images/game4.jpg" alt="Arcade Games">
+                <p class="caption">Arcade Classics</p>
+            </div>
+            <div class="slide">
+                <img src="images/game5.jpg" alt="Handheld Gaming">
+                <p class="caption">Handheld Fun</p>
+            </div>
+        </div>
+
+        <button class="arrow prev" id="prev">&#8592;</button>
+        <button class="arrow next" id="next">&#8594;</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
